@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <td>User ID</td>
+        <td>User Name</td>
+    </tr>
+    <tr *ngFor="let u of users">
+        <td>{{u.id}}</td>
+        <td>{{u.userName}}</td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-danger" (click)="deleteUser(user)">Delete User</button></td>
+    </tr>
+</table>
